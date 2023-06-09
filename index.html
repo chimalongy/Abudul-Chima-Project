@@ -4,25 +4,103 @@
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
+
+
+    <style>
+
+      .services{
+        display: flex;
+        flex-direction: column;
+        width:80%;
+      }
+
+      .services-container{
+        display: flex;
+        
+      }
+
+      @media screen and (max-width: 320px) {
+        .services{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+      }
+
+      .services-container{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .card-left{
+        width: 100%;
+
+      }
+
+      .card-right{
+        width: 100%;
+        
+      }
+      
+      }
+      
+      </style>
   </head>
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <header id="header">
-      <img id="header-img"/>
-      <nav id="nav-bar">
-      <a href="#"> Features </a>
-      <a href="#"> How it works </a>
-      <a href="#"> Pricing </a>
+      <img id="header-img" src="https://drive.google.com/file/d/1fTk35tFPlRw7XaPHc-ISiAD5QR_vudij/view?usp=sharing" style="width:100px; height:100px"/>
+      <nav id="nav-bar" style="position:fixed; top:0; overflow: hidden;">
+      <a class="nav-link" href="#fast-shiping"> Features </a>
+      <a class="nav-link" href="#Premium-Material"> How it works </a>
+      <a class="nav-link" href="#Quality-Assurance"> Pricing </a>
       </nav>
     </header>
 
     <video id="video" src="#"></video>
-    <form id="form">
-      <input type="email" id ="email" placeholder="Enter your email here"/>
-      <input id= "submit" type="submit"/>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input type="email" id ="email" name="email" placeholder="Enter your email here"/>
+      <input id= "submit" type="submit" value="Submit"/>
     </form>
+
+    <div class="services">
+      <div class="services-container">
+        <div class="card-left">
+          <img src="#" alt="some icons here"/>
+        </div>
+        <div class="card-right">
+          <h2 id="Premium-Materials">Premium Materials</h2>
+          <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+        </div>
+
+      </div>
+      <div class="services-container">
+        <div class="card-left">
+          <img src="#" alt="some icons here"/>
+        </div>
+        <div class="card-right">
+          <h2 id="fast-shiping">Fast Shipping</h2>
+          <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+        </div>
+
+      </div>
+
+      <div class="services-container">
+        <div class="card-left">
+          <img src="#" alt="some icons here"/>
+        </div>
+        <div class="card-right">
+          <h2 id="Quality-Assurance">Quality Assurance</h2>
+          <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+        </div>
+
+      </div>
+
+
+
+
+    </div>
     
     <script  src="js/index.js"></script>
   </body>
